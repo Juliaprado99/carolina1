@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+*{
+    background-color: #AFEEEE;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    margin: 20px;
+    height: 100px;
+}
+.item{
+    list-style-type: none;
+}
+.link{
+    text-decoration: none;
+    color: black;
+    font-family: "Play", sans-serif;
+    font-size: 1.2em;
+}
+.pag{
+    text-align: center;
+}
+.title{
+    font-family: "Play", sans-serif;
+    margin: 50px;
+    text-align: center;
+}
+.title-text{
+    padding: 20px;
+}
+.text{
+    padding: 20px;
+}
+.btns{
+    text-align: center;
+    margin: 50px;
+}
+.btn{
+    background-color: #FF0000; /* Vermelho */
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px; /* Bordas ligeiramente arredondadas para suavidade */
+    box-shadow: 0 5px #B22222; /* Sombra para o efeito tridimensional */
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.btn:hover {
+    background-color: #CC0000; /* Laranja Vermelho Escuro */
+}
+
+.btn:active {
+    box-shadow: 0 2px #B22222;
+    transform: translateY(3px); /* Efeito de "clicado" */
+}
+
+
+@media (max-width: 600px) {
+    .btn{
+        padding: 10px 20px; /* Reduzindo o padding */
+        font-size: 16px; /* Diminuindo o tamanho da fonte */
+        margin: 10px;
+    }
+
+
+    .btns{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px; /* Espaço entre os botões */
+        margin: 20px;
+    }
+    .text{
+        padding: 5px;
+    }
+    .logo{
+        margin: 5px;
+            height: 100px;
+        }
+    .title{
+        margin: 10px;
+}
+    .title-text{
+        padding: 5px;
+}
+}
